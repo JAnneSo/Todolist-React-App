@@ -1,0 +1,21 @@
+@import "./colors.scss";
+
+span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+span,
+input {
+    width: 155px;
+    max-width: 155px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.edit-btn {
+    margin-right: 4px;
+    svg {
+        color: $grey-scale1;
+    }
+}

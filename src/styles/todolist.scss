@@ -1,0 +1,25 @@
+@import "./colors.scss";
+
+.todolist {
+    padding: 30px;
+    margin: 5px 10px;
+    display: inline-block;
+    border-radius: 20px;
+    background: $backgroung-gradient;
+    box-shadow: $box-shadow;
+    &__header {
+        display: grid;
+        grid-template-columns: 1fr 25px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__header--title {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        color: $grey-scale1;
+    }
+    &__header--delete-btn {
+        color: $grey-scale1;
+    }
+}

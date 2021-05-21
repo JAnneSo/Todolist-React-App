@@ -1,0 +1,69 @@
+@import "./colors.scss";
+
+.progress-section {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    progress {
+        appearance: none;
+        height: 5px;
+        width: 100px;
+        margin-right: 5px;
+        &::-webkit-progress-inner-element {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        &::-webkit-progress-bar {
+            background-color: $grey-scale3;
+        }
+        &::-webkit-progress-value {
+            border-radius: 10px;
+            background-color: $dark-green;
+            transition: all 600ms ease;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: 12px;
+        color: $grey-scale2;
+    }
+}
+.todolist-items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.todolist-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 32px 1fr 18px;
+    &__ckbx {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        border: 2px solid $grey-scale3;
+        border-radius: 5px;
+        background-color: #fff;
+        margin-right: 10px;
+        &:checked {
+            background: no-repeat center url("../assets/img/check-solid.svg");
+            background-size: 10px;
+            background-color: $green;
+            border-color: $dark-green;
+        }
+        &:checked + .todolist-item__label {
+            text-decoration: line-through;
+            color: $grey-scale3;
+        }
+    }
+    &__label {
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        color: $grey-scale1;
+    }
+    .delete-btn {
+        color: $dark-red;
+    }
+}

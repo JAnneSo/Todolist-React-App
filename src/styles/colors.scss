@@ -1,0 +1,44 @@
+$background: var(--background);
+$grey-scale1: var(--grey-scale1);
+$grey-scale2: var(--grey-scale2);
+$grey-scale3: var(--grey-scale3);
+$grey-scale4: var(--grey-scale4);
+$grey-scale5: var(--grey-scale5);
+$white: var(--white);
+$dark-red: var(--dark-red);
+$green: var(--green);
+$dark-green: var(--dark-green);
+$box-shadow: var(--box-shadow);
+$backgroung-gradient: var(--backgroung-gradient);
+
+body {
+    --background: #ffffff;
+    --grey-scale1: #2b2b2b;
+    --grey-scale2: #91989d;
+    --grey-scale3: #bbbdc7;
+    --grey-scale4: #cccccc;
+    --grey-scale5: #dedede;
+    --white: #ffffff;
+    --dark-red: #aa1e18;
+    --green: #4acea3;
+    --dark-green: #38bb90;
+    --box-shadow: 2.48603e-15px 40.6px 81.2px rgba(51, 51, 51, 0.0845),
+        inset -5.91123e-16px -9.65378px 9.65378px #e1e1e1, inset 5.91123e-16px 9.65378px 9.65378px #ffffff;
+    --backgroung-gradient: linear-gradient(180deg, #ffffff 0%, #e7e7e7 100%);
+}
+
+body.dark-mode {
+    --background: #2b2b2b; //ok
+    --grey-scale1: #dedede;
+    --grey-scale2: #91989d;
+    --grey-scale3: #5c5c5c; //ok
+    --grey-scale4: #91989d; // ~ok
+    --grey-scale5: #dedede;
+    --white: #ffffff;
+    --dark-red: #791814; //ok
+    --green: #4acea3;
+    --dark-green: #38bb90;
+    --box-shadow: 2.48603e-15px 40.6px 81.2px rgba(51, 51, 51, 0.0845),
+        inset -5.91123e-16px -9.65378px 9.65378px #434343, inset 5.91123e-16px 9.65378px 9.65378px #2b2b2b;
+    --backgroung-gradient: linear-gradient(180deg, #2b2b2b 0%, #3e3e3e 100%);
+}
